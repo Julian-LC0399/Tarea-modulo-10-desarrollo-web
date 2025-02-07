@@ -11,20 +11,20 @@ const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (username === 'user' && password === 'pass') {
-            setMessage('Login successful!');
+            setMessage('Inicio de sesión exitoso');
             setIsSuccess(true);
         } else {
-            setMessage('Invalid credentials');
+            setMessage('Datos incorrectos');
             setIsSuccess(false);
         }
     };
 
     return (
         <div className="login-container">
-            <h2>Login</h2>
+            <h2>Inicio de sesión</h2>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label>Username:</label>
+                    <label>Usuario:</label>
                     <input
                         type="text"
                         value={username}
@@ -33,7 +33,7 @@ const Login = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label>Password:</label>
+                    <label>Contraseña:</label>
                     <input
                         type="password"
                         value={password}
@@ -41,7 +41,7 @@ const Login = () => {
                         data-cy="password-input"
                     />
                 </div>
-                <button type="submit" data-cy="login-button">Login</button>
+                <button type="submit" data-cy="login-button">Iniciar Sesión</button>
             </form>
             {message && (
                 <p className={`message ${isSuccess ? 'success' : ''}`} data-cy="message">
