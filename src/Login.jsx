@@ -11,7 +11,7 @@ const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (username === 'user' && password === 'pass') {
-            setMessage('Inicio de sesión exitoso');
+            setMessage('Inicio de sesión exitoso!');
             setIsSuccess(true);
         } else {
             setMessage('Datos incorrectos');
