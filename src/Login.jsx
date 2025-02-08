@@ -23,8 +23,9 @@ const Login = () => {
             <h2>Inicio de sesión</h2>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label>Usuario:</label>
+                    <label htmlFor="username">Usuario:</label>
                     <input
+                        id="username" // Agregar id
                         type="text"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
@@ -32,8 +33,9 @@ const Login = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label>Contraseña:</label>
+                    <label htmlFor="password">Contraseña:</label>
                     <input
+                        id="password" // Agregar id
                         type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}

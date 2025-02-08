@@ -1,7 +1,6 @@
-// cypress/e2e/login.spec.js
 describe('Login Flow', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:3000'); // Asegúrate de que la URL sea correcta
+        cy.visit('http://localhost:3000');
     });
 
     it('should display an error message for invalid credentials', () => {
